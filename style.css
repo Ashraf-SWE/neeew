@@ -290,67 +290,6 @@ footer {
         font-size: 14px;
     }
 }
-/* MOBILE RESPONSIVE FOR SMALL SCREENS */
-@media (max-width: 600px) {
-
-    /* Hero section padding & font */
-    .hero {
-        padding: 40px 15px;
-        text-align: center;
-    }
-
-    .hero h2 {
-        font-size: 22px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .hero button {
-        width: 100%;
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    /* Navbar vertical */
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 15px;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        gap: 12px;
-        margin-top: 10px;
-    }
-
-    /* Projects cards stack vertically */
-    .project-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .project-card {
-        width: 95%;
-        padding: 18px;
-        font-size: 15px;
-    }
-
-    /* Hire Me Modal */
-    .modal-content {
-        width: 90%;
-        padding: 20px;
-    }
-
-    /* WhatsApp button bigger for touch */
-    .whatsapp-btn {
-        width: 100%;
-        padding: 14px;
-        font-size: 16px;
-    }
 }
 /* HIRE ME BUTTON STYLE - BLACK */
 .hire-btn {
@@ -407,3 +346,80 @@ footer {
         font-size: 16px;
     }
 }
+/* MOBILE RESPONSIVE FOR ENTIRE PROJECT */
+@media (max-width: 768px) {
+
+    /* HERO SECTION */
+    .hero {
+        padding: 60px 15px;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    /* PROJECT CARDS */
+    .project-container {
+        flex-direction: column;   /* stack vertically */
+        align-items: center;
+        gap: 15px;
+    }
+
+    .project-card {
+        width: 95%;               /* full width of mobile */
+        padding: 18px;
+        font-size: 15px;
+    }
+
+    /* HIRE ME BUTTON */
+    .hire-btn {
+        width: 90%;
+        padding: 14px 0;
+        font-size: 16px;
+        transform: none !important;   /* remove desktop zoom */
+        box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    }
+
+    .hire-btn::after {
+        display: none;  /* remove glow */
+    }
+
+    /* WHATSAPP BUTTON */
+    .whatsapp-btn {
+        width: 90%;
+        padding: 14px 0;
+        font-size: 16px;
+    }
+
+    /* MODAL */
+    .modal-content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 15px 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
