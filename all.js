@@ -10,4 +10,11 @@ showEduBtn.addEventListener("click", () => {
         showEduBtn.textContent = "Hide Education";
     }
 });
+<button id="showEduBtn" class="show-btn" onclick="
+  const edu=document.getElementById('eduInfo');
+  const btn=this;
+  if(edu.style.display==='block'){edu.style.display='none'; btn.textContent='Show Education';}
+  else{edu.style.display='block'; btn.textContent='Hide Education';}
+">Show Education</button>
+
 
