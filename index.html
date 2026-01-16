@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashraf Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h1 class="logo">Ashraf Portfolio</h1>
+        <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Hi, I'm Ashraf Siddique Shakib</h2>
+        <p>A Beginner Web Developer</p>
+        
+     <!-- HERO SECTION / wherever Hire Me button -->
+<button class="hire-btn" onclick="openModal()">Hire Me</button>
+
+
+
+    </section>
+
+    <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am learning web development.
+            I love coding and building websites.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <<section class="skills" id="skills">
+>
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+        <div class="project-card neon">
+
+            <h3>To-Do List</h3>
+            <p>A simple task management website.</p>
+        </div>
+
+        <div class="project-card neon">
+
+            <h3>Calculator</h3>
+            <p>Basic calculator using HTML, CSS & JS.</p>
+        </div>
+
+        <div class="project-card neon">
+
+            <h3>Quiz Website</h3>
+            <p>MCQ based quiz with score system.</p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <<section class="contact" id="contact">
+>
+        <h2>Contact Me</h2>
+        <p>Email:poredibo@gmail.com</p>
+  <p>Phone No : 01867473063</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Ashraf
+    </footer>
+  <!-- HIRE ME MODAL -->
+
+
+<div class="modal" id="hireModal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">×</span>
+
+        <h2>Hire Me</h2>
+        <p><strong>Name:</strong> Ashraf Siddique Shakib</p>
+        <p><strong>Role:</strong> Beginner Web Developer</p>
+        <p><strong>Skills:</strong> HTML, CSS, JavaScript, Java</p>
+        <p><strong>Email:</strong> poredibo@gmail.com</p>
+      <a 
+  href="https://wa.me/8801867473063" 
+  target="_blank"
+  class="whatsapp-btn">
+  WhatsApp ME
+</a>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script>
+    function openModal() {
+        document.getElementById("hireModal").style.display = "flex";
+    }
+
+    function closeModal() {
+        document.getElementById("hireModal").style.display = "none";
+    }
+</script>
